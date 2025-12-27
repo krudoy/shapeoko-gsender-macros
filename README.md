@@ -11,7 +11,7 @@ All settings are in **ONE macro** (`Machine Config`). Edit once, all other macro
 ## Quick Start
 
 1. **Import**: gSender → Macros → Import → `shapeoko5-macros.json`
-2. **Configure**: Click `Machine Config ⚙️` macro, edit values for your setup
+2. **Configure**: Click `⚙️ Machine Config` macro, edit values for your setup
 3. **Run Config**: Click the macro button to load your settings
 4. **Ready**: All other macros now use your configuration
 
@@ -42,33 +42,33 @@ All settings are in **ONE macro** (`Machine Config`). Edit once, all other macro
 
 | Macro | Purpose |
 |-------|---------|
-| **Machine Config ⚙️** | Set all configuration (RUN FIRST!) |
-| **BitSetter Change Tool** | Probe tool, apply Z offset |
-| **BitSetter Clear Reference** | Reset tool reference |
-| **BitZero V2 Probe Z** | Z-only probing |
-| **BitZero V2 Probe XY** | XY corner probe |
-| **BitZero V2 Probe XYZ** | Full corner probe |
-| **Go To X0 Y0 Safe Z** | Return to work origin |
-| **Go To Machine Home** | Park at home |
-| **Go To BitSetter** | Navigate to BitSetter |
+| **⚙️ Machine Config** | Set all configuration (RUN FIRST!) |
+| **🔧 BitSetter Change Tool** | Probe tool, apply Z offset |
+| **🔧 BitSetter Clear Reference** | Reset tool reference |
+| **📐 BitZero V2 Probe Z** | Z-only probing |
+| **📐 BitZero V2 Probe XY** | XY corner probe |
+| **📐 BitZero V2 Probe XYZ** | Full corner probe |
+| **🏠 Go To X0 Y0 Safe Z** | Return to work origin |
+| **🏠 Go To Machine Home** | Park at home |
+| **🏠 Go To BitSetter** | Navigate to BitSetter |
 
 ## Workflow
 
 ### Initial Setup (once per gSender session)
 1. Connect to machine
 2. Home the machine
-3. Run **Machine Config ⚙️**
+3. Run **⚙️ Machine Config**
 
 ### Before Each Job
 1. Load first tool
-2. Run **BitSetter Change Tool** (sets reference)
+2. Run **🔧 BitSetter Change Tool** (sets reference)
 3. Position BitZero V2 on stock
-4. Run **BitZero V2 Probe XYZ**
+4. Run **📐 BitZero V2 Probe XYZ**
 5. Start job
 
 ### On Tool Change (M6)
 1. Change to new tool
-2. Run **BitSetter Change Tool** (applies offset)
+2. Run **🔧 BitSetter Change Tool** (applies offset)
 3. Resume job
 
 ## Calibration

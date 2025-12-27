@@ -38,10 +38,20 @@ def get_macro_name(filepath):
         'X0y0': 'X0 Y0',
         'Goto': 'Go To',
         'V2': 'V2',
-        'Config': 'Config ⚙️',
     }
     for old, new in replacements.items():
         name = name.replace(old, new)
+    
+    # Add emoji prefixes by category
+    # Note: Check "Go To" first since "Go To BitSetter" should be navigation
+    if 'Machine Config' in name:
+        name = '⚙️ ' + name
+    elif 'Go To' in name:
+        name = '🏠 ' + name
+    elif 'BitSetter' in name:
+        name = '🔧 ' + name
+    elif 'BitZero' in name:
+        name = '📐 ' + name
     
     return name
 
